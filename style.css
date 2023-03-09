@@ -1,0 +1,190 @@
+:root {
+    --colour-welcome : #152238;
+    --colour-codeEditor : #192b41;
+    --colour-main: #203354;
+    --color-accent : #23395d;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: var(--colour-main);
+    margin: 0 auto;
+}
+
+section {
+    padding: 0.5rem;
+}
+
+button, .buttonLink {
+    color: #ffffff8c;
+    font-size: 1.5rem;
+    text-decoration: none;
+    height: 5rem;
+    width: 15rem;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+/* CSS for Welcome Section */
+
+.welcomeArea {
+    background-image:url(./images/pawel-czerwinski-WVKFthwtJwU-unsplash.jpg);
+    background-color: var(--colour-welcome);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    background-attachment: fixed;
+}
+
+.welcomeText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcomeText h1 {
+    font-size: 6rem;
+    text-align: center;
+    width: 55rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.welcomeText p {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.welcome_navButtons {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+    width: 40rem;
+}
+
+.welcome_navButtons a {
+    background-color: var(--colour-main);
+}
+
+.welcome_navButtons a:hover {
+    background-color: var(--colour-codeEditor);
+    color: white;
+    cursor: pointer;
+}
+
+/* CSS for Tool Section */
+
+.tryitToolArea {
+    background-color: var(--colour-codeEditor);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+
+.toolContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 75vw;
+}
+
+.codeEditors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.editorSeperator {
+    background-color: var(--colour-welcome);
+    min-width: 15vw;
+    min-height: 0.25rem;
+}
+
+.codeEditors p {
+    font-size: 1.5rem;
+    color: #ffffff8c;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+
+.dummySiteDisplay {
+    background-color: white;
+    min-height: 75vh;
+    min-width: 30vw;
+    border: none;
+}
+
+.toolButtonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    min-width: 50vw;
+}
+
+button, .dummy_HelpBtn, .tutorial_navButtons a {
+    background-color: var(--colour-welcome);
+}
+
+button:hover, .dummy_HelpBtn:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #23395d;
+}
+
+
+/* CSS for Tutorial Section */
+
+.tutorialArea {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tutorialMainText {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 50rem;
+    margin-bottom: 5rem;
+}
+
+.tutorialMainText h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.tutorialMainText p {
+    font-size: 1.25rem;
+    padding-left: 15px;
+    
+
+}
+
+.tutorialMainText h4 {
+    font-size: 2rem;
+}
+
+.tutorial_navButtons a:hover {
+    background-color: var(--colour-codeEditor);
+    color: white;
+}
